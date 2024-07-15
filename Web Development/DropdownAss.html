@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DropDown_Ass</title>
+<style>
+*
+{
+  margin: 0;
+}
+ #id1
+{
+  background-color: rgb(134, 171, 241);
+  height: 300px;
+  width:1200px;
+  border-top: 5px solid rgb(134, 171, 241);
+}
+ul 
+{
+  list-style-type: none;
+  margin-left: 200px;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(38, 64, 58);
+  border-bottom: 5px solid orange;
+  box-shadow: 3px 3px black;
+  margin-right: 174px;
+  border-right: 20px solid rgb(55, 112, 105);
+}
+
+li 
+{
+  float: left;
+}
+
+li a, .dropbtn 
+{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 50px;
+  text-decoration: none;
+  border-right: 1px solid white;
+}
+
+li a:hover, .dropdown:hover .dropbtn 
+{
+  background-color: orange;
+}
+
+li.dropdown 
+{
+  display: inline-block;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: rgb(88, 88, 88);
+  min-width: 120px;
+  border: 2.5px solid orange;
+  box-shadow: 3px 3px black;
+  z-index: 1;
+}
+
+.dropdown-content a 
+{
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: orange;}
+
+.dropdown:hover .dropdown-content { display: block;}
+
+hr
+{
+  height: 1px;
+  background-color: orange;
+}
+
+</style>
+</head>
+<body>
+    <div id="id1">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Product</a>
+          <div class="dropdown-content">
+            <a href="#">Product 1</a><hr>
+            <a href="#">Product 2</a><hr>
+            <a href="#">Product 3</a><hr>
+            <a href="#">Product 4</a>
+          </div>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#users">Users</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </div>
+</body>
+</html>

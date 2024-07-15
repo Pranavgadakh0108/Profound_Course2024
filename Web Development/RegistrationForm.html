@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+    <style>
+        fieldset{
+            background-color: rgb(248, 242, 227);
+        }
+        #l1{
+            border: 2px solid rgb(255, 136, 0);
+        }
+        #btn1{
+            background-color: rgb(121, 249, 121);
+        }
+        #btn2{
+            background-color: rgb(146, 180, 245);
+        }
+        #btn3{
+            background-color: rgb(250, 150, 170);
+        }
+        #img{
+            height: 120px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form action="serverurl" method="get">
+        <fieldset>
+            <legend id="l1"><b>EXAM REGISTRATION FORM</b></legend>
+            <label>Name : </label>
+            <input type="text" name="nm" >
+            <br><br>
+            <label>Email : </label>
+            <input type="email" name="email">
+            <br><br>
+            <label>Contact No. : </label>
+            <input type="tel" name="phone" pattern="[0-9]{10}">
+            <br><br>
+            <label>Enter Age : </label>
+            <input type="number" name="age" min="18" max="28">
+            <br><br>
+            <label>Gender : </label>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male">
+            <label>Female</label>
+            <input type="radio" name="gender" value="female">
+            <br><br>
+            <label>Enter Birthdate : </label>
+            <input type="date" name="date">
+            <br><br>
+            <label>Exam City : </label>
+            <select name="city">
+                <option value="nsk">Nashik</option>
+                <option value="th">Thane</option>
+                <option value="mum">Mumbai</option>
+                <option value="pn">Pune</option>
+            </select>
+            <br><br>
+            <label>Exam Date & Time : </label>
+            <input type="datetime-local" name="date-time">
+            <br><br>
+            <label>Exam Week : </label>
+            <input type="week" name="week">
+            <br><br>
+            <label>Center Arrival Time : </label>
+            <input type="time" name="time">
+            <br><br>
+            <label>Choose Exam Subject : </label>
+            <ul>
+                <li>C Programming <input type="checkbox" name="C"></li>
+                <li>C++ Programming <input type="checkbox" name="C++"></li>
+                <li>Java Programming <input type="checkbox" name="Java"></li>
+                <li>MySQL <input type="checkbox" name="sql"></li>
+                <li>HTML,CSS,JS <input type="checkbox" name="web"></li>
+            </ul>
+            <label>Exam Difficulty Level : </label>
+            <input type="range" name="level">
+            <br><br>
+            <label>Upload Govt. ID : </label>
+            <input type="file" name="ID">
+            <br><br>
+            <label>Govt. ID Link : </label>
+            <input type="url" name="link">
+            <br><br>
+            <input type="image" src="https://t3.ftcdn.net/jpg/05/60/46/08/360_F_560460865_uFvS0U5Z9H8ShET3iazEXVg9tZUbpru7.jpg" id="img">
+            <br><br>
+            <input type="submit" value="SUBMIT" id="btn1">
+            <input type="button" value="PRINT FORM" id="btn2">
+            <input type="reset" value="RESET" id="btn3">
+            
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>

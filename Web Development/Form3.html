@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+  <title>Doctor Appointment</title>
+  <style>
+    #main
+    {
+      display:inline-flex;
+    }
+    #img
+    {
+      margin-top: 100px;
+      width: 800px;
+      height: 550px;
+    }
+    #div2
+    {
+        margin-top: 30px;
+    }
+    h1
+    {
+      letter-spacing: 0.5px;
+    }
+    hr
+    {
+      height: 2px;
+      background-color: red;
+    }
+    .box
+    {
+      margin-left: 20px;
+    }
+    .name
+    {
+      margin-left: 67px;
+    }
+    #gender
+    {
+      margin-left: 60px;
+    }
+    .addr
+    {
+      margin-left: 55px;
+    }
+    #que
+    {
+      float: left; 
+    }
+    #query
+    {
+      margin-left: 31px;
+      float: left;
+    }
+    #check
+    {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="div1">
+        <img src="https://static.vecteezy.com/system/resources/previews/002/127/134/non_2x/medical-and-healthcare-concept-illustration-schedule-medical-check-up-flat-design-with-doctor-can-use-for-the-homepage-mobile-apps-character-cartoon-illustration-flat-style-free-vector.jpg" alt="doctor_img" id="img">
+    </div>
+    <div id="div2">
+         <form action="ThankYou" method="get">
+             <center><h1>Doctor Appointment Form</h1></center>
+             <hr><br><br>
+             <label>Appointment <input type="date" name="date" class="box"><br> Date</label>
+             <br><br>
+             <label>Appointment <input type="time" name="time" class="box"><br> Time</label>
+             <br><br>
+             <label>Name
+               <input type="text" value="First" class="name">
+               <input type="text" value="Last" class="box">
+             </label>
+             <br><br>
+             <label>Gender
+                 <label id="gender">Male 
+                     <input type="radio" name="gender">
+                 </label>
+                 <label>Female
+                   <input type="radio" name="gender">
+                 </label>
+             </label>
+             <br><br>
+             <label>Phone<input type="text" name="phone" value="####" class="name"></label>
+             <br><br>
+             <label>Address 
+               <input type="text" value="city" class="addr">
+               <input type="text" value="state" class="box">
+             </label>
+             <br><br>
+             <label id="que">Your Query</label>
+             <textarea name="query" id="query" rows="3"cols="40"></textarea>
+             <br><br><br><br>
+             <div id="check">
+                <label>Appointment<br>Type</label><br>
+                    <label class="box">
+                      Select which appointment type(s) you require <br>
+                      <input type="checkbox">Cervix checkup <br>
+                      <input type="checkbox">Heart checkup <br>
+                      <input type="checkbox">Eye check-up <br>
+                      <input type="checkbox">Hearing Test <br>
+                      <br>
+                      <input type="submit" value="Send">
+                      </label>
+             </div>
+         </form>
+    </div>
+  </div> 
+</body>
+</html>
