@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+	form{
+		border: 2px solid blueviolet;
+		border-radius: 10px;
+		padding: 20px;
+		font-weight: bold;
+		background-color: lightpink;		
+	}
+	h2{
+		color:blue;
+	}
+</style>
+</head>
+<body>
+	<form action="AddEmployee" method="post">
+		<h2>ADD EMPLOYEES</h2>
+		<table>
+			<tr>
+				<td>NAME : </td>
+				<td><input type="text" name="name" placeholder="enter name"></td>
+			</tr>
+			<tr>
+				<td>EMAIL : </td>
+				<td><input type="email" name="email" placeholder="enter email"></td>
+			</tr>
+			<tr>
+				<td>PASSWORD : </td>
+				<td><input type="password" name="pass" placeholder="enter password"></td>
+			</tr>
+			<tr>
+				<td>COUNTRY : </td>
+				<td>
+					<select name="country" style="width:170px">
+						<option>India</option>
+						<option>USA</option>
+						<option>UK</option>
+						<option>Other</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Save Employee" style="background-color: aquamarine; padding: 5px;">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<button style="background-color: yellow; padding: 5px; margin-top: 20px;"><a href="ViewServlet">View Employee</a></button>
+</body>
+</html>
