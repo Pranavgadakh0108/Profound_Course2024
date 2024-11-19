@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate?useSSL=true</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">pranav</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+
+		<mapping class="com.profound.entity.Employee" />
+		<mapping class="com.profound.entity.Student" />
+		<mapping class="com.profound.entity.Category" />
+		<mapping class="com.profound.entity.Account" />
+		<mapping class="com.profound.entity.Person" />
+		<mapping class="com.profound.entity.Person_Passport" />
+		<mapping class="com.profound.entity.Passport" />
+		<mapping class="com.profound.entity.User" />
+		<mapping class="com.profound.entity.PhoneNo" />
+		<mapping class="com.profound.entity.Employees" />
+		<mapping class="com.profound.entity.Department" />
+		
+
+	</session-factory>
+</hibernate-configuration>
